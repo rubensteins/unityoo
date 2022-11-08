@@ -24,9 +24,11 @@ public class MainManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // POLYMORPHISM
         foreach (var v in _vehicles)
         {
             v.Move();  // they know what to do
+            
             if (v is IFlyer)
             {
                 // do something for only the flyers.

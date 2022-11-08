@@ -1,5 +1,6 @@
 namespace DefaultNamespace
 {
+    // INHERITANCE
     public class Car : Vehicle, IDriver
     {
         public Car()

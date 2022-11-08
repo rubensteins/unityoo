@@ -2,6 +2,7 @@ namespace DefaultNamespace
 {
     public abstract class Vehicle
     {
+        // ENCAPSULATION
         public float MaxSpeed { get; set; }
 
         /// <summary>

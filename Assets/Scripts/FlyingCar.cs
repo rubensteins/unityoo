@@ -1,6 +1,6 @@
 namespace DefaultNamespace
 {
-    // POLYMORPHISM
+
     public class FlyingCar : Vehicle, IDriver, IFlyer
     {
         public FlyingCar()
@@ -10,7 +10,10 @@ namespace DefaultNamespace
 
         public override void Move()
         {
+            CalculateSpeed();
             // it can move
+            Drive();
+            Fly();
         }
 
         public void Drive()
@@ -21,6 +24,12 @@ namespace DefaultNamespace
         public void Fly()
         {
             // it can fly
+        }
+
+        // ENCAPSULATION
+        private float CalculateSpeed()
+        {
+            return MaxSpeed - 10; // warning: top-secret algorith!
         }
     }
 }
